@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Formulário / MediaQuery</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 200,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+            <form action="cadastro.php" method="post">
+            <div id="nome">
+                <label for="inome">
+                    <span class="material-icons">person</span>
+                </label>
+                <input type="text" name="nome" id="inome" placeholder="seu e-mail">
+            </div>
+            <div id="senha">
+                <label for="isenha">
+                    <span class="material-icons">vpn_key</span>
+                </label>
+                <input type="password" name="senha" id="isenha" placeholder="sua senha">
+            </div>
+                <input type="submit" value="Entrar">
+                <input type="submit" value="Esqueci minha Senha">
+                <span class="material-icons">mail</span>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
